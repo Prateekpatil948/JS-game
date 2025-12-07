@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color:burlywood;
+}
+
+h1 {
+    background-color: #081b31;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    background-color: #081b31;
+    cursor: pointer;
+    transform: scale(1.1);
+    border-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.choice:active {
+    transform: scale(0.95);
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 5rem;
+    margin-top: 4rem;
+    font-weight: 500;
+}
+
+#user-score, #comp-score {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #081b31;
+    min-width: 4rem;
+}
+
+.msg-cont {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+
+/* Controls container for buttons */
+.controls {
+    margin-top: 1.5rem;
+}
+
+/* Reset button styling */
+#reset-btn {
+    background: #081b31;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(8, 27, 49, 0.15);
+    transition: transform 0.15s ease, background 0.15s ease;
+}
+
+#reset-btn:hover {
+    transform: translateY(-2px);
+    background: #0b2543;
+}
+
+#reset-btn:active {
+    transform: translateY(0);
+    opacity: 0.95;
+}
