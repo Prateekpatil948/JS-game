@@ -62,7 +62,7 @@ const playGame = (userChoice) =>{
         }
         else{
             // Scissors loses to rock
-            userWin = compChoice === 'rock' ? true : false;
+            userWin = compChoice === 'rock' ? false : true;
         }
         showWinner(userWin, userChoice, compChoice);
     }
